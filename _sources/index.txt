@@ -1,0 +1,37 @@
+.. g-node-portal documentation master file, created by
+   sphinx-quickstart on Thu Sep 22 17:35:49 2011.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to the G-Node Data API Python Client Documentation!
+===========================================================
+
+G-Node Portal is a platform for Neuroscientists to facilitate data access, data storage, data analysis and exchange. With G-Node Portal you may store and efficiently organize your experimental data, exchange data with collaborators, search for published data or scientists with similar interests. 
+
+
+===============
+G-Node data API
+===============
+
+The G-Node provides an open API for data access, allowing programmers to code their own clients. For a preliminary version of the the data API specifications see http://g-node.github.com/g-node-portal/
+
+
+=======================
+G-Node data API clients
+=======================
+
+Web interface
+-------------
+
+A web interface access is already provided (see http://www.g-node.org/data). It is currently being redesigned and it will be more feature-rich in the near future. Stay tunned!
+
+
+MATLAB Client
+-------------
+
+A MATLAB-based client has been developped at the G-Node and can be found at http://g-node.github.com/gnode-client-matlab/
+
+Python Client
+-------------
+
+A Python-based client is currently under development.
