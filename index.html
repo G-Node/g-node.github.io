@@ -1,40 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>G-Node Projects by G-Node</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="G-Node Projects : Welcome to the G-Node Projects page">
 
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>G-Node Projects</title>
   </head>
+
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/G-Node">View On GitHub</a></li>
-        </nav>
-      </div><!-- end header -->
 
-    <div class="wrapper">
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/G-Node">View on GitHub</a>
 
-      <section>
-        <div id="title">
-          <h1>G-Node Projects</h1>
-          <p>Welcome to the G-Node Projects page</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/G-Node">G-Node</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
+          <h1 id="project_title">G-Node Projects</h1>
+          <h2 id="project_tagline">Welcome to the G-Node Projects page</h2>
 
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <h2>
 <a id="g-node" class="anchor" href="#g-node" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>G-Node</h2>
 
@@ -48,18 +40,61 @@ For general information about the G-Node, please visit our <a href="http://www.g
 <h3>
 <a id="nix" class="anchor" href="#nix" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NIX</h3>
 
+<p>The <a href="https://github.com/G-Node/nix">NIX</a> data model allows to store fully annotated scientific dataset, i.e. the data together with its metadata within the same container. Our aim is to achieve standardization by providing a common/generic data structure for a multitude of data types.</p>
+
+<p>The current implementations store the actual data using the HDF5 file format as a storage backend.</p>
+
+<p>Bindings for NIX exist for:</p>
+
+<ul>
+<li>Python: <a href="https://github.com/G-Node/nixpy">NIXPY</a>
+</li>
+<li>Matlab: <a href="https://github.com/G-Node/nix-mx">NIX-MX</a>
+</li>
+<li>Java: <a href="https://github.com/G-Node/nix-java">NIX-Java</a>
+</li>
+</ul>
+
+<p>NIXPY also includes a standalone implementation of the NIX API and therefore the C++ NIX library is not required to use it.</p>
+
 <h3>
 <a id="gin" class="anchor" href="#gin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GIN</h3>
+
+<p>The <strong>G</strong>-Node <strong>In</strong>frastructure project is currently in development.</p>
+
+<p>The goal of the GIN project is to develop a free data management system designed for comprehensive and reproducible management of scientific data. It keeps track of changes to the contents and organization of the files and provides secure remote access to the data. More specifically, once a directory has been put under GIN control, the contents will be synced to a dedicated GIN server. With proper authorization, data can be accessed and changed from remote clients, making it easy to work from multiple workplaces while keeping all data at hand and in sync. Data can be managed from web and file browsers as well as through a command line interface, which enables integrating data management and access into the data acquisition and analysis procedures. The system handles any kinds of directory structures and file types, and tracks all changes. The service furthermore makes it straightforward to share any data within a lab or with off-site collaborators and to work on it in parallel.</p>
+
+<p>The data versioning, storage, and synchronisation part of the project is built on <em>git</em> and <em>git-annex</em>.</p>
+
+<p>The project consists of:</p>
+
+<ul>
+<li>The authentication provider: <a href="https://github.com/G-Node/gin-auth">GIN-Auth</a>
+</li>
+<li>The repository server: <a href="https://github.com/G-Node/gin-repo">GIN-Repo</a>
+</li>
+<li>The web UI: <a href="https://github.com/G-Node/gin-ui">GIN-UI</a>
+</li>
+<li>The command line client: <a href="https://github.com/G-Node/gin-cli">GIN-CLI</a>
+</li>
+</ul>
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+<p>Christian Garbers (<a href="https://github.com/cgars" class="user-mention">@cgars</a>), Achilleas Koutsou (<a href="https://github.com/achilleas-k" class="user-mention">@achilleas-k</a>), Michael Sonntag (<a href="https://github.com/mpsonntag" class="user-mention">@mpsonntag</a>)
+Christian Kellner (<a href="https://github.com/gicmo" class="user-mention">@gicmo</a>), Adrian Stoewer (<a href="https://github.com/stoewer" class="user-mention">@stoewer</a>), Jan Grewe (<a href="https://github.com/jgrewe" class="user-mention">@jgrewe</a>)</p>
       </section>
-
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
     
+
   </body>
 </html>
