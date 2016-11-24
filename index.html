@@ -17,7 +17,7 @@
     <div id="header_wrap" class="outer">
         <header class="inner">
             <a id="gnode_logo" href="http://www.g-node.org"></a>
-          <h1 id="project_title">G-Node Projects</h1> 
+          <h1 id="project_title">G-Node Projects</h1>
           <h2 id="project_tagline">Welcome to the G-Node Projects page</h2>
 
         </header>
@@ -43,14 +43,16 @@ For general information about the G-Node, please visit our <a href="http://www.g
 
 <p>The current implementations store the actual data using the HDF5 file format as a storage backend.</p>
 
+<p><a href="https://github.com/G-Node/nix">NIX</a>: Main repository and base (C++) implementation.</p>
+
 <p>Language bindings:</p>
 
 <ul>
-<li><a href="https://github.com/G-Node/nixpy">NIXPY</a>: Python
+<li><a href="https://github.com/G-Node/nixpy">NIXPY</a>: Python.
 </li>
-<li><a href="https://github.com/G-Node/nix-mx">NIX-MX</a>: Matlab
+<li><a href="https://github.com/G-Node/nix-mx">NIX-MX</a>: Matlab.
 </li>
-<li><a href="https://github.com/G-Node/nix-java">NIX-Java</a>: Java
+<li><a href="https://github.com/G-Node/nix-java">NIX-Java</a>: Java.
 </li>
 </ul>
 
@@ -61,32 +63,78 @@ For general information about the G-Node, please visit our <a href="http://www.g
 
 <p>The <strong>G</strong>-Node <strong>In</strong>frastructure project is currently in development.</p>
 
-<p>The goal of the GIN project is to develop a free data management system designed for comprehensive and reproducible management of scientific data. It keeps track of changes to the contents and organization of the files and provides secure remote access to the data. More specifically, once a directory has been put under GIN control, the contents will be synced to a dedicated GIN server. With proper authorization, data can be accessed and changed from remote clients, making it easy to work from multiple workplaces while keeping all data at hand and in sync. Data can be managed from web and file browsers as well as through a command line interface, which enables integrating data management and access into the data acquisition and analysis procedures. The system handles any kinds of directory structures and file types, and tracks all changes. The service furthermore makes it straightforward to share any data within a lab or with off-site collaborators and to work on it in parallel.</p>
+<p>The goal of the GIN project is to develop a free data management system designed for comprehensive and reproducible management of scientific data.
+    It keeps track of changes to the contents and organization of the files and provides secure remote access to the data.
+    More specifically, once a directory has been put under GIN control, the contents will be synced to a dedicated GIN server.
+    With proper authorization, data can be accessed and changed from remote clients, making it easy to work from multiple workplaces while keeping all data at hand and in sync.
+    Data can be managed from web and file browsers as well as through a command line interface, which enables integrating data management and access into the data acquisition and analysis procedures.
+    The system handles any kinds of directory structures and file types, and tracks all changes.
+    The service furthermore makes it straightforward to share any data within a lab or with off-site collaborators and to work on it in parallel.</p>
 
 <p>The data versioning, storage, and synchronisation part of the project is built on <em>git</em> and <em>git-annex</em>.</p>
 
 <p>The project consists of:</p>
 
 <ul>
-<li><a href="https://github.com/G-Node/gin-auth">GIN-Auth</a>: The authentication provider
+<li><a href="https://github.com/G-Node/gin-auth">GIN-Auth</a>: The authentication provider.
 </li>
-<li><a href="https://github.com/G-Node/gin-repo">GIN-Repo</a>: The repository server
+<li><a href="https://github.com/G-Node/gin-repo">GIN-Repo</a>: The repository server.
 </li>
-<li><a href="https://github.com/G-Node/gin-ui">GIN-UI</a>The web UI
+<li><a href="https://github.com/G-Node/gin-ui">GIN-UI</a>: The web UI.
 </li>
-<li><a href="https://github.com/G-Node/gin-cli">GIN-CLI</a>The command line client
+<li><a href="https://github.com/G-Node/gin-cli">GIN-CLI</a>: The command line client.
 </li>
 </ul>
 
 <h3>
 <a id="odml" class="anchor" href="#odml" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>odML</h3>
 
+
+
+<p>
+    The <strong>o</strong>pen <strong>m</strong>etadata <strong>M</strong>arkup <strong>L</strong>anguage is an XML based file format for storing metadata in an organised human- and machine-readable way.
+    odML is an initiative to define and establish an open, flexible, and easy-to-use format to transport metadata.
+</p>
+
+<p><a href="https://github.com/G-Node/python-odml">python-odml</a>: Python library.</p>
+
 <h3>
 <a id="GCA" class="anchor" href="#gca" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GCA</h3>
+
+<p>
+    The <strong>G</strong>-Node <strong>C</strong>onference <strong>A</strong>pplication suite is an electronic conference management application and an associated guide for mobile devices.
+</p>
+
+<ul>
+    <li><a href="https://github.com/G-Node/gca-web">GCA-Web</a>: Web application for abstract submission and management.
+    </li>
+    <li><a href="https://github.com/G-Node/gca-python">GCA-Python</a>: Python client for abstract management.
+    </li>
+    <li><a href="https://github.com/G-Node/gca-ios">GCA-iOS</a>: Conference guide, iOS app.
+    </li>
+    <li><a href="https://github.com/G-Node/gca-android">GCA-Android</a>: Conference guide, Android app.
+    </li>
+</ul>
 
 <h3>
 <a id="Neuroshare" class="anchor" href="#neuroshare" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Neuroshare</h3>
 
+<p>
+    <strong>Neuroshare</strong> is a standard API for accessing data in proprietary formats, which is supported by many vendors.
+    We develop a number of tools to facilitate data access through Neuroshare.
+</p>
+
+Libraries:
+<ul>
+    <li><a href="https://github.com/G-Node/python-neuroshare">python-neuroshare</a>: Python bindings for the Neuroshare API.
+    </li>
+    <li><a href="https://github.com/G-Node/nsmatlab">nsmatlab</a>: Matlab bindings for the Neuroshare API.
+    </li>
+    <li><a href="https://github.com/G-Node/nswineproxy">NSWineProxy</a>: Proxy for using Windows Neuroshare Libraries on Unix(-like) systems.
+    </li>
+    <li><a href="https://github.com/G-Node/ns2hdf">ns2hdf</a>: Neuroshare to HDF5 converter (for any data format supported by Neuroshare).
+    </li>
+</ul>
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
@@ -108,8 +156,5 @@ Adrian Stoewer (<a href="https://github.com/stoewer" class="user-mention">@stoew
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-
-    
-
   </body>
 </html>
