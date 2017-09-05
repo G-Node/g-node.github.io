@@ -81,8 +81,6 @@ For general information about the G-Node, please visit our <a href="http://www.g
 <h3>
 <a id="gin" class="anchor" href="#gin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GIN</h3>
 
-<p>The <strong>G</strong>-Node <strong>In</strong>frastructure project is currently in development.</p>
-
 <p>The goal of the GIN project is to develop a free data management system designed for comprehensive and reproducible management of scientific data.
     It keeps track of changes to the contents and organization of the files and provides secure remote access to the data.
     More specifically, once a directory has been put under GIN control, the contents will be synced to a dedicated GIN server.
@@ -91,16 +89,17 @@ For general information about the G-Node, please visit our <a href="http://www.g
     The system handles any kinds of directory structures and file types, and tracks all changes.
     The service furthermore makes it straightforward to share any data within a lab or with off-site collaborators and to work on it in parallel.</p>
 
+<p>Any GIN repository hosted on the official <a href="https://gin.g-node.org">GIN service</a> can be permanently archived (at a given point in time) and referenced by a unique Digital Object Identifier (DOI).</p>
+
+<p>The GIN service is based on the <a href="https://gogs.io/">Gogs</a> Git service.</p>
 <p>The data versioning, storage, and synchronisation part of the project is built on <em>git</em> and <em>git-annex</em>.</p>
 
 <p>The project consists of:</p>
 
 <ul>
-<li><a href="https://github.com/G-Node/gin-auth">GIN-Auth</a>: The authentication provider.
+<li><a href="https://github.com/G-Node/gogs">GIN service</a>: The serverside service, based on Gogs.
 </li>
-<li><a href="https://github.com/G-Node/gin-repo">GIN-Repo</a>: The repository server.
-</li>
-<li><a href="https://github.com/G-Node/gin-ui">GIN-UI</a>: The web UI.
+<li><a href="https://github.com/G-Node/gin-doi">GIN-DOI</a>: The G-Node DOI service.
 </li>
 <li><a href="https://github.com/G-Node/gin-cli">GIN-CLI</a>: The command line client.
 </li>
