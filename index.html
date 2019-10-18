@@ -32,14 +32,12 @@
     </head>
 
   <body>
-
-    <!-- HEADER -->
+   <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
             <a id="gnode_logo" href="http://www.g-node.org"></a>
-          <h1 id="project_title">G-Node Projects</h1>
-          <h2 id="project_tagline">Welcome to the G-Node Projects page</h2>
-
+            <h1 id="project_title">G-Node Projects</h1>
+            <h2 id="project_tagline">Welcome to the G-Node Projects page</h2>
         </header>
     </div>
 
@@ -47,19 +45,35 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h2>
-<a id="g-node" class="anchor" href="#g-node" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>G-Node</h2>
 
-<p>The German Neuroinformatics Node (G-Node) provides various services and tools to facilitate data access, data management, and data sharing.
-This page is our project showcase where you can find information about our projects.
-For general information about the G-Node, please visit our <a href="http://www.g-node.org">main website</a>.</p>
+            <a id="g-node" class="anchor" href="#g-node" aria-hidden="true">
+                <span aria-hidden="true" class="octicon octicon-link"></span>
+            </a>
+            G-Node
+        </h2>
+
+<p>The German Neuroinformatics Node (G-Node) provides various services and tools to facilitate data access,
+    data management, and data sharing.
+    This page is our project showcase where you can find information about our projects.
+    For general information about the G-Node, please visit our <a href="http://www.g-node.org">main website</a>.</p>
 
 <h2>
-<a id="projects" class="anchor" href="#projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Projects</h2>
+    <a id="projects" class="anchor" href="#projects" aria-hidden="true">
+        <span aria-hidden="true" class="octicon octicon-link"></span>
+    </a>
+    Projects
+</h2>
 
 <h3>
-<a id="nix" class="anchor" href="#nix" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NIX</h3>
+    <a id="nix" class="anchor" href="#nix" aria-hidden="true">
+        <span aria-hidden="true" class="octicon octicon-link"></span>
+    </a>
+    NIX
+</h3>
 
-<p>The <a href="https://github.com/G-Node/nix">NIX</a> data model allows to store fully annotated scientific dataset, i.e. the data together with its metadata within the same container. Our aim is to achieve standardization by providing a common/generic data structure for a multitude of data types.</p>
+<p>The <a href="https://github.com/G-Node/nix">NIX</a> data model allows to store fully annotated scientific dataset,
+    i.e. the data together with its metadata within the same container. Our aim is to achieve standardization by
+    providing a common/generic data structure for a multitude of data types.</p>
 
 <p>The current implementations store the actual data using the HDF5 file format as a storage backend.</p>
 
@@ -68,28 +82,35 @@ For general information about the G-Node, please visit our <a href="http://www.g
 <p>Language bindings:</p>
 
 <ul>
-<li><a href="https://github.com/G-Node/nixpy">NIXPY</a>: Python.
-</li>
-<li><a href="https://github.com/G-Node/nix-mx">NIX-MX</a>: Matlab.
-</li>
-<li><a href="https://github.com/G-Node/nix-java">NIX-Java</a>: Java.
-</li>
+    <li><a href="https://github.com/G-Node/nixpy">NIXPY</a>: Python.</li>
+    <li><a href="https://github.com/G-Node/nix-mx">NIX-MX</a>: Matlab.</li>
+    <li><a href="https://github.com/G-Node/nix-java">NIX-Java</a>: Java.</li>
 </ul>
 
-<p>NIXPY also includes a standalone implementation of the NIX API and therefore the C++ NIX library is not required to use it.</p>
+<p>NIXPY also includes a standalone implementation of the NIX API and therefore the C++ NIX library
+    is not required to use it.</p>
 
 <h3>
-<a id="gin" class="anchor" href="#gin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GIN</h3>
+    <a id="gin" class="anchor" href="#gin" aria-hidden="true">
+        <span aria-hidden="true" class="octicon octicon-link"></span>
+    </a>
+    GIN
+</h3>
 
-<p>The goal of the GIN project is to develop a free data management system designed for comprehensive and reproducible management of scientific data.
+<p>The goal of the GIN project is to develop a free data management system designed for comprehensive and reproducible
+    management of scientific data.
     It keeps track of changes to the contents and organization of the files and provides secure remote access to the data.
     More specifically, once a directory has been put under GIN control, the contents will be synced to a dedicated GIN server.
-    With proper authorization, data can be accessed and changed from remote clients, making it easy to work from multiple workplaces while keeping all data at hand and in sync.
-    Data can be managed from web and file browsers as well as through a command line interface, which enables integrating data management and access into the data acquisition and analysis procedures.
+    With proper authorization, data can be accessed and changed from remote clients, making it easy to work from
+    multiple workplaces while keeping all data at hand and in sync.
+    Data can be managed from web and file browsers as well as through a command line interface, which enables
+    integrating data management and access into the data acquisition and analysis procedures.
     The system handles any kinds of directory structures and file types, and tracks all changes.
-    The service furthermore makes it straightforward to share any data within a lab or with off-site collaborators and to work on it in parallel.</p>
+    The service furthermore makes it straightforward to share any data within a lab or with off-site
+    collaborators and to work on it in parallel.</p>
 
-<p>Any GIN repository hosted on the official <a href="https://gin.g-node.org">GIN service</a> can be permanently archived (at a given point in time) and referenced by a unique Digital Object Identifier (DOI).</p>
+<p>Any GIN repository hosted on the official <a href="https://gin.g-node.org">GIN service</a> can be permanently
+    archived (at a given point in time) and referenced by a unique Digital Object Identifier (DOI).</p>
 
 <p>The GIN service is based on the <a href="https://gogs.io/">Gogs</a> Git service.</p>
 <p>The data versioning, storage, and synchronisation part of the project is built on <em>git</em> and <em>git-annex</em>.</p>
@@ -97,74 +118,94 @@ For general information about the G-Node, please visit our <a href="http://www.g
 <p>The project consists of:</p>
 
 <ul>
-<li><a href="https://github.com/G-Node/gogs">GIN service</a>: The serverside service, based on Gogs.
-</li>
-<li><a href="https://github.com/G-Node/gin-doi">GIN-DOI</a>: The G-Node DOI service.
-</li>
-<li><a href="https://github.com/G-Node/gin-cli">GIN-CLI</a>: The command line client.
-</li>
+    <li><a href="https://github.com/G-Node/gogs">GIN service</a>: The serverside service, based on Gogs.</li>
+    <li><a href="https://github.com/G-Node/gin-doi">GIN-DOI</a>: The G-Node DOI service.</li>
+    <li><a href="https://github.com/G-Node/gin-cli">GIN-CLI</a>: The command line client.</li>
+    <li><a href="https://github.com/G-Node/gin-valid">GIN-VALID</a>: The gin microservice validation server.</li>
+    <li><a href="https://github.com/G-Node/gin-proc">GIN-PROC</a>: The gin microservice pipeline processing server.</li>
 </ul>
 
-<p> Visit <a href="https://web.gin.g-node.org/G-Node/Info/wiki">the GIN Wiki</a> for a Quickstart, documentation and further information about GIN.
+<p>Visit <a href="https://web.gin.g-node.org/G-Node/Info/wiki">the GIN Wiki</a>
+    for a Quickstart, documentation and further information about GIN.</p>
 
 <h3>
-<a id="odml" class="anchor" href="#odml" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>odML</h3>
+    <a id="odml" class="anchor" href="#odml" aria-hidden="true">
+        <span aria-hidden="true" class="octicon octicon-link"></span>
+    </a>
+    odML
+</h3>
 
-
-
-<p>
-    The <strong>o</strong>pen <strong>m</strong>etadata <strong>M</strong>arkup <strong>L</strong>anguage is an XML based file format for storing metadata in an organised human- and machine-readable way.
-    odML is an initiative to define and establish an open, flexible, and easy-to-use format to transport metadata.
-</p>
-
+<p>The <strong>o</strong>pen <strong>m</strong>etadata <strong>M</strong>arkup <strong>L</strong>anguage
+    is an XML based file format for storing metadata in an organised human- and machine-readable way.
+    odML is an initiative to define and establish an open, flexible, and easy-to-use format to transport metadata.</p>
 <p><a href="https://github.com/G-Node/python-odml">python-odml</a>: Python library.</p>
 
-<h3>
-<a id="GCA" class="anchor" href="#gca" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GCA</h3>
-
-<p>
-    The <strong>G</strong>-Node <strong>C</strong>onference <strong>A</strong>pplication suite is an electronic conference management application and a conference guide for mobile devices.
-</p>
-
-<p>The G-Node hosts the web application for conferences at the <a href="https://abstracts.g-node.org/conferences">G-Node Conference Site</a></p>
-<p>The conference guide apps can be found on the <a href="https://play.google.com/store/apps/developer?id=G-Node+Development+Team">Google Play</a> and <a href="https://itunes.apple.com/us/developer/thomas-wachtler/id1154537542">iTunes App</a> stores.
+<p>odML also provides reusable templates and terminologies to easily create custom odML from a variety of
+    pre-defined metadata building blocks like e.g. 'Subject' or 'Stimulus'.</p>
 
 <ul>
-    <li><a href="https://github.com/G-Node/gca-web">GCA-Web</a>: Web application for abstract submission and management.
-    </li>
-    <li><a href="https://github.com/G-Node/gca-python">GCA-Python</a>: Python client for abstract management.
-    </li>
-    <li><a href="https://github.com/G-Node/gca-ios">GCA-iOS</a>: Conference guide, iOS app.
-    </li>
-    <li><a href="https://github.com/G-Node/gca-android">GCA-Android</a>: Conference guide, Android app.
-    </li>
+    <li><a href="https://templates.g-node.org">odML Templates</a>: hosting platform for re-usable odML templates.</li>
+    <li><a href="https://terminologies.g-node.org">odML Terminologies</a>: hosting platform
+        to browse and download odML definitions.</li>
 </ul>
 
 <h3>
-<a id="Neuroshare" class="anchor" href="#neuroshare" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Neuroshare</h3>
+    <a id="GCA" class="anchor" href="#gca" aria-hidden="true">
+        <span aria-hidden="true" class="octicon octicon-link"></span>
+    </a>
+    GCA
+</h3>
 
-<p>
-    <strong>Neuroshare</strong> is a standard API for accessing data in proprietary formats, which is supported by many vendors.
-    We develop a number of tools to facilitate data access through Neuroshare.
-</p>
+<p>The <strong>G</strong>-Node <strong>C</strong>onference <strong>A</strong>pplication suite is an electronic
+    conference management application and a conference guide for mobile devices.</p>
+
+<p>The G-Node hosts the web application for conferences at the
+    <a href="https://abstracts.g-node.org/conferences">G-Node Conference Site</a></p>
+
+<p>The conference guide apps can be found on the
+    <a href="https://play.google.com/store/apps/developer?id=G-Node+Development+Team">Google Play</a> and
+    <a href="https://itunes.apple.com/us/developer/thomas-wachtler/id1154537542">iTunes App</a> stores.</p>
+
+<ul>
+    <li><a href="https://github.com/G-Node/gca-web">GCA-Web</a>: Web application for abstract submission and management.</li>
+    <li><a href="https://github.com/G-Node/gca-python">GCA-Python</a>: Python client for abstract management.</li>
+    <li><a href="https://github.com/G-Node/gca-ios">GCA-iOS</a>: Conference guide, iOS app.</li>
+    <li><a href="https://github.com/G-Node/gca-android">GCA-Android</a>: Conference guide, Android app.</li>
+</ul>
+
+<h3>
+    <a id="Neuroshare" class="anchor" href="#neuroshare" aria-hidden="true">
+        <span aria-hidden="true" class="octicon octicon-link"></span>
+    </a>
+    Neuroshare
+</h3>
+
+<p><strong>Neuroshare</strong> is a standard API for accessing data in proprietary formats,
+    which is supported by many vendors. We develop a number of tools to facilitate data access through Neuroshare.</p>
 
 Libraries:
 <ul>
     <li><a href="https://github.com/G-Node/python-neuroshare">python-neuroshare</a>: Python bindings for the Neuroshare API.
         <ul>
-            <li>One of the most highly used open-source software in neuroscience, according to <a href="http://depsy.org/package/python/neuroshare">Depsy</a>.
-            </li>
-            <li><a href="https://github.com/G-Node/python-neuroshare/blob/master/ns-convert">ns-convert</a>: Converter script, included in python-neuroshare, for converting from Neuroshare supported data formats to NIX or HDF5.
-            </li>
-    </ul>
+            <li>One of the most highly used open-source software in neuroscience, according to
+                <a href="http://depsy.org/package/python/neuroshare">Depsy</a>.</li>
+            <li><a href="https://github.com/G-Node/python-neuroshare/blob/master/ns-convert">ns-convert</a>
+                : Converter script, included in python-neuroshare, for converting from Neuroshare supported data
+                formats to NIX or HDF5.</li>
+        </ul>
     </li>
-    <li><a href="https://github.com/G-Node/nsmatlab">nsmatlab</a>: Matlab bindings for the Neuroshare API.
-    </li>
-    <li><a href="https://github.com/G-Node/nswineproxy">NSWineProxy</a>: Proxy for using Windows Neuroshare Libraries on Unix(-like) systems.
-    </li>
+    <li><a href="https://github.com/G-Node/nsmatlab">nsmatlab</a>
+        : Matlab bindings for the Neuroshare API.</li>
+    <li><a href="https://github.com/G-Node/nswineproxy">NSWineProxy</a>
+        : Proxy for using Windows Neuroshare Libraries on Unix(-like) systems.</li>
 </ul>
+
 <h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+    <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true">
+        <span aria-hidden="true" class="octicon octicon-link"></span>
+    </a>
+    Authors and Contributors
+</h3>
 
 <p>
 Christian Garbers (<a href="https://github.com/cgars" class="user-mention">@cgars</a>),
@@ -175,6 +216,7 @@ Andrey Sobolev (<a href="https://github.com/asobolev" class="user-mention">@asob
 Michael Sonntag (<a href="https://github.com/mpsonntag" class="user-mention">@mpsonntag</a>),
 Adrian Stoewer (<a href="https://github.com/stoewer" class="user-mention">@stoewer</a>),
 </p>
+
       </section>
     </div>
 
